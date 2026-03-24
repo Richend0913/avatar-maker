@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アバター作成ツール | アバターメーカー - 無料でSNSアイコンを作成</title>
+    <meta name="description" content="無料アバター作成ツール。顔の形、髪型、目、アクセサリーを選んでオリジナルのSNSプロフィール画像を作ろう。">
+    <meta name="keywords" content="アバター 作成 無料, SNS アイコン メーカー, プロフィール画像 作成, 似顔絵 メーカー, キャラクター 作成">
+    <link rel="canonical" href="https://richend0913.github.io/avatar-maker/maker.html">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6327505164684489" crossorigin="anonymous"></script>
+</head>
+<body class="maker-page">
+    <header class="maker-header">
+        <div class="container">
+            <a href="index.html" class="logo" style="text-decoration:none;">
+                <span class="logo-icon">&#x1F3A8;</span>
+                <span class="logo-text">アバターメーカー</span>
+            </a>
+            <nav>
+                <a href="index.html" class="nav-link">トップへ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="maker-layout">
+        <!-- Left: Options Panel -->
+        <div class="options-panel">
+            <div class="tabs">
+                <button class="tab active" data-tab="face">顔の形</button>
+                <button class="tab" data-tab="skin">肌の色</button>
+                <button class="tab" data-tab="hair">髪型</button>
+                <button class="tab" data-tab="haircolor">髪の色</button>
+                <button class="tab" data-tab="eyes">目</button>
+                <button class="tab" data-tab="eyecolor">目の色</button>
+                <button class="tab" data-tab="mouth">口</button>
+                <button class="tab" data-tab="eyebrows">眉毛</button>
+                <button class="tab" data-tab="accessory">アクセサリー</button>
+                <button class="tab" data-tab="bg">背景色</button>
+            </div>
+            <div class="tab-content">
+                <!-- Face Shape -->
+                <div class="option-group active" id="tab-face">
+                    <h3>顔の形を選択</h3>
+                    <div class="option-grid">
+                        <button class="option-btn selected" data-key="faceShape" data-value="0">丸顔</button>
+                        <button class="option-btn" data-key="faceShape" data-value="1">面長</button>
+                        <button class="option-btn" data-key="faceShape" data-value="2">四角</button>
+                        <button class="option-btn" data-key="faceShape" data-value="3">ハート型</button>
+                    </div>
+                </div>
+
+                <!-- Skin Color -->
+                <div class="option-group" id="tab-skin">
+                    <h3>肌の色を選択</h3>
+                    <div class="color-grid">
+                        <button class="color-swatch selected" data-key="skinColor" data-value="#FDEBD0" style="background:#FDEBD0;"></button>
+                        <button class="color-swatch" data-key="skinColor" data-value="#FDDCB5" style="background:#FDDCB5;"></button>
+                        <button class="color-swatch" data-key="skinColor" data-value="#F5C9A8" style="background:#F5C9A8;"></button>
+                        <button class="color-swatch" data-key="skinColor" data-value="#DEB887" style="background:#DEB887;"></button>
+                        <button class="color-swatch" data-key="skinColor" data-value="#C68642" style="background:#C68642;"></button>
+                        <button class="color-swatch" data-key="skinColor" data-value="#8D6E63" style="background:#8D6E63;"></button>
+                        <button class="color-swatch" data-key="skinColor" data-value="#A1887F" style="background:#A1887F;"></button>
+                        <button class="color-swatch" data-key="skinColor" data-value="#6D4C41" style="background:#6D4C41;"></button>
+                    </div>
+                </div>
+
+                <!-- Hair Style -->
+                <div class="option-group" id="tab-hair">
+                    <h3>髪型を選択</h3>
+                    <div class="option-grid">
+                        <button class="option-btn selected" data-key="hairStyle" data-value="0">ショート</button>
+                        <button class="option-btn" data-key="hairStyle" data-value="1">ベリーショート</button>
+                        <button class="option-btn" data-key="hairStyle" data-value="2">ロング</button>
+                        <button class="option-btn" data-key="hairStyle" data-value="3">ボブ</button>
+                        <button class="option-btn" data-key="hairStyle" data-value="4">ポニーテール</button>
+                        <button class="option-btn" data-key="hairStyle" data-value="5">ツインテール</button>
+                        <button class="option-btn" data-key="hairStyle" data-value="6">カーリー</button>
+                        <button class="option-btn" data-key="hairStyle" data-value="7">スパイキー</button>
+                        <button class="option-btn" data-key="hairStyle" data-value="8">ウェーブ</button>
+                        <button class="option-btn" data-key="hairStyle" data-value="9">モヒカン</button>
+                    </div>
+                </div>
+
+                <!-- Hair Color -->
+                <div class="option-group" id="tab-haircolor">
+                    <h3>髪の色を選択</h3>
+                    <div class="color-grid">
+                        <button class="color-swatch selected" data-key="hairColor" data-value="#2C1810" style="background:#2C1810;"></button>
+                        <button class="color-swatch" data-key="hairColor" data-value="#212121" style="background:#212121;"></button>
+                        <button class="color-swatch" data-key="hairColor" data-value="#5D4037" style="background:#5D4037;"></button>
+                        <button class="color-swatch" data-key="hairColor" data-value="#D4A574" style="background:#D4A574;"></button>
+                        <button class="color-swatch" data-key="hairColor" data-value="#D32F2F" style="background:#D32F2F;"></button>
+                        <button class="color-swatch" data-key="hairColor" data-value="#FF9800" style="background:#FF9800;"></button>
+                        <button class="color-swatch" data-key="hairColor" data-value="#1565C0" style="background:#1565C0;"></button>
+                        <button class="color-swatch" data-key="hairColor" data-value="#FF6B9D" style="background:#FF6B9D;"></button>
+                        <button class="color-swatch" data-key="hairColor" data-value="#7B1FA2" style="background:#7B1FA2;"></button>
+                        <button class="color-swatch" data-key="hairColor" data-value="#FFD700" style="background:#FFD700;"></button>
+                    </div>
+                </div>
+
+                <!-- Eye Style -->
+                <div class="option-group" id="tab-eyes">
+                    <h3>目の形を選択</h3>
+                    <div class="option-grid">
+                        <button class="option-btn selected" data-key="eyeStyle" data-value="0">まんまる</button>
+                        <button class="option-btn" data-key="eyeStyle" data-value="1">アーモンド</button>
+                        <button class="option-btn" data-key="eyeStyle" data-value="2">キャットアイ</button>
+                        <button class="option-btn" data-key="eyeStyle" data-value="3">眠たい</button>
+                        <button class="option-btn" data-key="eyeStyle" data-value="4">キラキラ</button>
+                        <button class="option-btn" data-key="eyeStyle" data-value="5">ドット</button>
+                        <button class="option-btn" data-key="eyeStyle" data-value="6">ウインク</button>
+                        <button class="option-btn" data-key="eyeStyle" data-value="7">バッテン</button>
+                    </div>
+                </div>
+
+                <!-- Eye Color -->
+                <div class="option-group" id="tab-eyecolor">
+                    <h3>目の色を選択</h3>
+                    <div class="color-grid">
+                        <button class="color-swatch selected" data-key="eyeColor" data-value="#2C1810" style="background:#2C1810;"></button>
+                        <button class="color-swatch" data-key="eyeColor" data-value="#4A6741" style="background:#4A6741;"></button>
+                        <button class="color-swatch" data-key="eyeColor" data-value="#2196F3" style="background:#2196F3;"></button>
+                        <button class="color-swatch" data-key="eyeColor" data-value="#795548" style="background:#795548;"></button>
+                        <button class="color-swatch" data-key="eyeColor" data-value="#6A1B9A" style="background:#6A1B9A;"></button>
+                        <button class="color-swatch" data-key="eyeColor" data-value="#F57F17" style="background:#F57F17;"></button>
+                    </div>
+                </div>
+
+                <!-- Mouth -->
+                <div class="option-group" id="tab-mouth">
+                    <h3>口を選択</h3>
+                    <div class="option-grid">
+                        <button class="option-btn selected" data-key="mouthStyle" data-value="0">にっこり</button>
+                        <button class="option-btn" data-key="mouthStyle" data-value="1">微笑み</button>
+                        <button class="option-btn" data-key="mouthStyle" data-value="2">びっくり</button>
+                        <button class="option-btn" data-key="mouthStyle" data-value="3">ニュートラル</button>
+                        <button class="option-btn" data-key="mouthStyle" data-value="4">猫口</button>
+                        <button class="option-btn" data-key="mouthStyle" data-value="5">ニヤリ</button>
+                    </div>
+                </div>
+
+                <!-- Eyebrows -->
+                <div class="option-group" id="tab-eyebrows">
+                    <h3>眉毛を選択</h3>
+                    <div class="option-grid">
+                        <button class="option-btn selected" data-key="eyebrowStyle" data-value="0">ナチュラル</button>
+                        <button class="option-btn" data-key="eyebrowStyle" data-value="1">ストレート</button>
+                        <button class="option-btn" data-key="eyebrowStyle" data-value="2">太め</button>
+                        <button class="option-btn" data-key="eyebrowStyle" data-value="3">細め</button>
+                        <button class="option-btn" data-key="eyebrowStyle" data-value="4">怒り</button>
+                    </div>
+                </div>
+
+                <!-- Accessory -->
+                <div class="option-group" id="tab-accessory">
+                    <h3>アクセサリーを選択</h3>
+                    <div class="option-grid">
+                        <button class="option-btn selected" data-key="accessory" data-value="0">なし</button>
+                        <button class="option-btn" data-key="accessory" data-value="1">丸メガネ</button>
+                        <button class="option-btn" data-key="accessory" data-value="2">四角メガネ</button>
+                        <button class="option-btn" data-key="accessory" data-value="3">サングラス</button>
+                        <button class="option-btn" data-key="accessory" data-value="4">キャップ</button>
+                        <button class="option-btn" data-key="accessory" data-value="5">ニット帽</button>
+                        <button class="option-btn" data-key="accessory" data-value="6">王冠</button>
+                    </div>
+                </div>
+
+                <!-- Background -->
+                <div class="option-group" id="tab-bg">
+                    <h3>背景色を選択</h3>
+                    <div class="color-grid">
+                        <button class="color-swatch selected" data-key="bgColor" data-value="#E8D5FF" style="background:#E8D5FF;"></button>
+                        <button class="color-swatch" data-key="bgColor" data-value="#FFE0F0" style="background:#FFE0F0;"></button>
+                        <button class="color-swatch" data-key="bgColor" data-value="#D0E8FF" style="background:#D0E8FF;"></button>
+                        <button class="color-swatch" data-key="bgColor" data-value="#E0F7FA" style="background:#E0F7FA;"></button>
+                        <button class="color-swatch" data-key="bgColor" data-value="#C8E6C9" style="background:#C8E6C9;"></button>
+                        <button class="color-swatch" data-key="bgColor" data-value="#FFF9C4" style="background:#FFF9C4;"></button>
+                        <button class="color-swatch" data-key="bgColor" data-value="#FFCCBC" style="background:#FFCCBC;"></button>
+                        <button class="color-swatch" data-key="bgColor" data-value="#F3E5F5" style="background:#F3E5F5;"></button>
+                        <button class="color-swatch" data-key="bgColor" data-value="#FFFFFF" style="background:#FFFFFF;border:2px solid #ddd;"></button>
+                        <button class="color-swatch" data-key="bgColor" data-value="#263238" style="background:#263238;"></button>
+                        <button class="color-swatch" data-key="bgColor" data-value="#FF6B9D" style="background:#FF6B9D;"></button>
+                        <button class="color-swatch" data-key="bgColor" data-value="#7C4DFF" style="background:#7C4DFF;"></button>
+                    </div>
+                    <div class="gradient-toggle">
+                        <input type="checkbox" id="bgGradientToggle">
+                        <label for="bgGradientToggle">グラデーション背景にする</label>
+                    </div>
+                    <div class="gradient-color-row" id="gradientColorRow" style="display:none;">
+                        <h4>グラデーション終了色</h4>
+                        <div class="color-grid">
+                            <button class="color-swatch" data-key="bgGradientColor" data-value="#E0E0FF" style="background:#E0E0FF;"></button>
+                            <button class="color-swatch" data-key="bgGradientColor" data-value="#FFE0F0" style="background:#FFE0F0;"></button>
+                            <button class="color-swatch" data-key="bgGradientColor" data-value="#D0E8FF" style="background:#D0E8FF;"></button>
+                            <button class="color-swatch" data-key="bgGradientColor" data-value="#F0F4C3" style="background:#F0F4C3;"></button>
+                            <button class="color-swatch" data-key="bgGradientColor" data-value="#FFCCBC" style="background:#FFCCBC;"></button>
+                            <button class="color-swatch" data-key="bgGradientColor" data-value="#B2EBF2" style="background:#B2EBF2;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Preview + Actions -->
+        <div class="preview-panel">
+            <div class="canvas-wrapper">
+                <h2>プレビュー</h2>
+                <canvas id="avatarCanvas" width="300" height="300"></canvas>
+            </div>
+
+            <div class="actions">
+                <div class="action-row">
+                    <button class="action-btn btn-random" id="btnRandom">&#x1F3B2; ランダム生成</button>
+                    <button class="action-btn btn-reset" id="btnReset">&#x1F504; リセット</button>
+                </div>
+                <button class="action-btn btn-preview" id="btnPreview">&#x1F50D; プレビュー（低解像度）</button>
+                <button class="action-btn btn-download" id="btnDownload">&#x2B07;&#xFE0F; 高解像度ダウンロード（¥300）</button>
+            </div>
+
+            <div class="ad-space">
+                <!-- AdSense ad unit placeholder -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-6327505164684489"
+                     data-ad-slot="auto"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Modal -->
+    <div class="modal-overlay" id="previewModal">
+        <div class="modal">
+            <h2>プレビュー</h2>
+            <canvas id="previewCanvas" width="200" height="200" class="modal-preview"></canvas>
+            <p>低解像度プレビューです。<br>高解像度（600x600 PNG）のダウンロードは¥300です。</p>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-secondary" id="closePreview">閉じる</button>
+                <button class="modal-btn modal-btn-primary" id="modalDownload">&#x2B07;&#xFE0F; ¥300でダウンロード</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal-overlay" id="paymentModal">
+        <div class="modal">
+            <h2>高解像度ダウンロード</h2>
+            <p>600x600px の高解像度PNG画像をダウンロードします。</p>
+            <div style="font-size:2rem;font-weight:900;background:linear-gradient(135deg,#FF6B9D,#C084FC);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:16px 0;">¥300</div>
+            <p style="font-size:0.85rem;color:#999;">※ Stripe決済（準備中）</p>
+            <div class="modal-actions">
+                <button class="modal-btn modal-btn-secondary" id="closePayment">キャンセル</button>
+                <button class="modal-btn modal-btn-primary" id="confirmPayment">決済して ダウンロード</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/avatar-renderer.js"></script>
+    <script src="js/maker.js"></script>
+</body>
+</html>
